@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+html body {
+    background: black;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+}
+.mainTitle {
+    margin: 0 0 0 0;
+    font-size: 10em;
+}
+.flicker {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#about {
+    font-size: 2.5em;
+}
+#links {
+    margin-top: 5px;
+    font-size: 2em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.content a:hover{
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 3px 0.5px 2px #ea36af, -2px -0.5px 3px #75fa69;
+    }
+  }
